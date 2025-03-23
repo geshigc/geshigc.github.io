@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FormatFactory 格式工厂 v5.18.0 多语便携版 - 全能格式转换专家</title>
+    <meta name="description" content="官方推荐的免费多媒体格式转换工具，支持视频、音频、图片、文档等200+格式转换，提供批量处理和高质量输出。">
+    <style>
+        :root {
+            --primary: #2196F3;
+            --secondary: #607D8B;
+        }
+        * {
+            box-sizing: border-box;
+            font-family: 'Segoe UI', system-ui, sans-serif;
+            margin: 0;
+        }
+        body {
+            line-height: 1.6;
+            background: #f8f9fa;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        /* 头部导航 */
+        header {
+            background: linear-gradient(135deg, #1976D2 0%, #2196F3 100%);
+            box-shadow: 0 4px 12px rgba(25, 118, 210, 0.2);
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+        .nav {
+            height: 72px;
+            padding: 0 2rem;
+            display: flex;
+            align-items: center;
+        }
+        .nav h1 {
+            color: white;
+            font-size: 1.8rem;
+            display: flex;
+            align-items: center;
+            gap: 12px;
+        }
+        /* 主视觉区 */
+        .hero {
+            text-align: center;
+            padding: 4rem 0;
+            background: linear-gradient(135deg, #2196F3 0%, #1976D2 100%);
+            color: white;
+        }
+        .screenshot-container {
+            width: 90%;
+            max-width: 800px;
+            margin: 2rem auto;
+            border-radius: 12px;
+            overflow: hidden;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+        }
+        .screenshot {
+            width: 100%;
+            height: auto;
+            object-fit: contain;
+            transition: transform 0.3s ease;
+        }
+        /* 功能列表 */
+        .features {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+            padding: 3rem 0;
+        }
+        .feature-card {
+            background: white;
+            padding: 2rem;
+            border-radius: 8px;
+            box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+        }
+        /* 下载按钮区 */
+        .download-section {
+            text-align: center;
+            padding: 3rem 0;
+        }
+        .download-buttons {
+            display: flex;
+            justify-content: center;
+            gap: 2rem;
+            margin: 2rem 0;
+        }
+        .btn-download {
+            padding: 1.2rem 2.4rem;
+            font-size: 1.2rem;
+            border: none;
+            border-radius: 8px;
+            background: var(--primary);
+            color: white;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+        }
+        .btn-download:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 4px 12px rgba(33, 150, 243, 0.3);
+        }
+        /* 响应式适配 */
+        @media (max-width: 768px) {
+            .download-buttons {
+                flex-direction: column;
+            }
+            .nav {
+                padding: 0 1rem;
+                height: 60px;
+            }
+        }
+.container {
+    max-width: 1200px;
+    margin: 0 auto;  /* 容器水平居中 */
+    text-align: center;  /* 文本水平居中 */
+}
+    </style>
+</head>
+<body>
+    <header>
+        <nav class="nav container">
+            <h1>FormatFactory 格式工厂</h1>
+        </nav>
+    </header>
+
+    <section class="hero">
+        <div class="container">
+            <h1 style="font-size: 2.5rem;margin-bottom:1rem">全媒体格式转换解决方案</h1>
+            <p style="font-size:1.2rem">支持 200+ 格式转换 | 批量处理 | 无损质量</p>
+            <div class="screenshot-container">
+                <img src="geshigongchang.jpg" alt="格式工厂操作界面截图" class="screenshot">
+            </div>
+        </div>
+    </section>
+
+    <section class="container">
+        <div class="features">
+            <div class="feature-card">
+                <h3>🎥 视频转换</h3>
+                <p>支持AVI、MP4、MKV等格式互转，4K超清输出，批量转换省时高效</p>
+            </div>
+            <div class="feature-card">
+                <h3>🎵 音频处理</h3>
+                <p>MP3/WMA/AAC格式互转，支持音频剪辑、合并、音量标准化</p>
+            </div>
+            <div class="feature-card">
+                <h3>🖼️ 图片转换</h3>
+                <p>JPG/PNG/GIF等格式互转，批量压缩、添加水印、调整尺寸</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="download-section">
+        <div class="container">
+            <h2 style="margin-bottom:1.5rem">立即获取免费版本</h2>
+            <div class="download-buttons">
+                <button class="btn-download" onclick="window.open('https://pan.quark.cn/s/dcc2bad565b0')">
+                    <span>夸克网盘下载</span>
+                    <small>手机端保存送1TB空间</small>
+                </button>
+                <button class="btn-download" style="background:#4CAF50" 
+                        onclick="window.open('https://pan.baidu.com/s/1FpGMo2FtfBNlXily4sl3Tg?pwd=h6ny')">
+                    📚 百度网盘下载
+                </button>
+            </div>
+            <p style="color:#666;margin-top:1rem">支持 Windows 10/11 及最新操作系统</p>
+        </div>
+    </section>
+
+    <footer style="background: #263238; color: white; padding: 2rem 0; margin-top: 3rem">
+        <div class="container">
+            <p>本站所有内容资源均来源于网络，仅供用户交流学习与研究使用，版权归属原版权方所有</p>
+            <p style="font-size:0.9em;margin-top:0.5rem">本站仅提供资源介绍下载及使用方法说明，我们尊重知识产权，呼吁大家共同维护良好的网络环境，合法使用软件。</p>
+        </div>
+    </footer>
+</body>
+</html>
